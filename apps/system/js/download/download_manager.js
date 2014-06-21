@@ -16,7 +16,7 @@ var DownloadManager = (function() {
   var mozDownloadManager = navigator.mozDownloadManager;
 
   if (!mozDownloadManager) {
-    console.error('navigator.mozDownloadManager not supported!');
+    console.warn('navigator.mozDownloadManager not supported!');
     return;
   }
 
